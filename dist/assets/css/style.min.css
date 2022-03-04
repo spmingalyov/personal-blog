@@ -742,6 +742,15 @@ body *, body *::before, body *::after {
 .post__header {
   margin: -2.5rem -2.5rem 2.5rem;
 }
+.post__header--video {
+  margin: 0 0 2.5rem;
+}
+
+.post__preview {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 .post__content {
   margin-bottom: 2rem;
@@ -800,9 +809,30 @@ body *, body *::before, body *::after {
 
 .post__read {
   color: #107EFF;
-  font-size: 1.4em;
+  font-size: 1.4rem;
   text-decoration: none;
 }
 .post__read:hover {
   text-decoration: underline;
+}
+
+.embed {
+  position: relative;
+  overflow: hidden;
+}
+.embed::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+.embed iframe,
+.embed video,
+.embed object,
+.embed embed {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
