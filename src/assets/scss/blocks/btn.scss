@@ -35,4 +35,11 @@
         }
     }
     
+    &--rounded {
+        border-radius: .41em;
+    }
+
+    &--sm {
+        padding: .7em 1.25em;
+    }
 }
