@@ -1,3 +1,10 @@
+.form {
+    &--auth {
+        max-width: 28rem;
+        margin: 0 auto;
+    }
+}
+
 .form__group {
     margin-bottom: 1.5rem;
     position: relative;
@@ -48,4 +55,22 @@
     bottom: 0;
     left: 0;
     z-index: 1;
+}
+
+.form__footer {
+   
+    &--center {
+        text-align: center;
+    }
+}
+
+.form__footer-list {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    color: $white;
+
+    a {
+        color: inherit;
+    }
 }

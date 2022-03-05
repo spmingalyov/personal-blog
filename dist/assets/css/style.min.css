@@ -394,6 +394,9 @@ body a:hover {
   color: #fff;
   margin-bottom: 3rem;
 }
+.page__title--center {
+  text-align: center;
+}
 
 .header {
   display: flex;
@@ -1050,6 +1053,11 @@ body a:hover {
   text-decoration: underline;
 }
 
+.form--auth {
+  max-width: 28rem;
+  margin: 0 auto;
+}
+
 .form__group {
   margin-bottom: 1.5rem;
   position: relative;
@@ -1092,6 +1100,20 @@ body a:hover {
   bottom: 0;
   left: 0;
   z-index: 1;
+}
+
+.form__footer--center {
+  text-align: center;
+}
+
+.form__footer-list {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  color: #fff;
+}
+.form__footer-list a {
+  color: inherit;
 }
 
 .works {
