@@ -1051,14 +1051,17 @@ body a:hover {
 }
 
 .form__group {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5rem;
   position: relative;
+}
+.form__group--md {
+  margin-bottom: 2.5rem;
 }
 
 .form__control {
   display: block;
   width: 100%;
-  padding: 0.5rem 0;
+  padding: 0.5rem 0 0.75rem;
   background: none;
   border: none;
   border-bottom: 1px solid #3F3F3F;
@@ -1155,4 +1158,34 @@ body a:hover {
   padding: 0.4rem 0.9rem;
   background-color: #EA8C1E;
   border-radius: 0.3rem;
+}
+
+.cabinet {
+  display: flex;
+  gap: 11rem;
+}
+
+.cabinet__form {
+  width: 34rem;
+}
+
+.cabinet__avatar {
+  flex-grow: 1;
+}
+.cabinet__avatar img {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.cabinet__file {
+  color: #3137C9;
+  font-size: 1.4rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.cabinet__file input {
+  display: none;
+}
+.cabinet__file:hover {
+  text-decoration: none;
 }
