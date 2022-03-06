@@ -23,6 +23,10 @@ body {
             text-decoration: underline;
         }
     }
+
+    &.no-scroll {
+        overflow: hidden
+    }
 }
 
 // blocks
@@ -48,3 +52,4 @@ body {
 @import "blocks/works.scss";
 @import "blocks/tags.scss";
 @import "blocks/cabinet.scss";
+@import "blocks/modal.scss";
