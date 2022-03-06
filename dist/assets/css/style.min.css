@@ -386,6 +386,10 @@ body a:hover {
 }
 
 .page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
   overflow: hidden;
 }
 
@@ -1110,6 +1114,8 @@ body a:hover {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.2;
   color: #fff;
 }
 .form__footer-list a {
