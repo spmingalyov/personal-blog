@@ -3,6 +3,10 @@
     justify-content: center;
     margin-top: 8rem;
     gap: 1rem;
+
+    @include breakpoint ($mobile-bp) {
+        margin-top: 5rem;
+    }
 }
 
 .pagination__link {

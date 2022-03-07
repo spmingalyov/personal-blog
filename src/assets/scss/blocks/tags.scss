@@ -3,6 +3,10 @@
     flex-wrap: nowrap;
     gap: 1rem;
     margin-bottom: 3rem;
+
+    @include breakpoint($mobile-bp) {
+        margin-bottom: 2rem;
+    }
 }
 
 .tags__item {
