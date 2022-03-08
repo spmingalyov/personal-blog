@@ -1595,6 +1595,9 @@ body.no-scroll, body.show-sidebar {
   left: 0;
   z-index: 1010;
 }
+.modal.show {
+  display: flex;
+}
 
 .modal__content {
   width: 100%;
@@ -1603,9 +1606,16 @@ body.no-scroll, body.show-sidebar {
   background-color: #202020;
   border-radius: 0.5rem;
   position: relative;
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: transform 200ms ease-in-out, opacity 200ms ease-in-out;
 }
 .modal__content--contact {
   margin-bottom: 2.5rem;
+}
+.modal__content--story {
+  padding: 0;
+  background: none;
 }
 
 .modal__close {
@@ -1638,4 +1648,9 @@ body.no-scroll, body.show-sidebar {
 }
 .modal__footer a:hover {
   text-decoration: none;
+}
+
+.modal__video {
+  display: block;
+  margin: 0 auto;
 }

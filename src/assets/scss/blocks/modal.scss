@@ -1,5 +1,4 @@
 .modal {
-    //display: flex;
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -13,6 +12,10 @@
     top: 0;
     left: 0;
     z-index: $z-index-modal;
+
+    &.show {
+        display: flex;
+    }
 }
 
 .modal__content {
@@ -24,9 +27,19 @@
     border-radius: .5rem;
     position: relative;
 
+    opacity: 0;
+
     &--contact {
         margin-bottom: 2.5rem;
     }
+
+    &--story {
+        padding: 0;
+        background: none;
+    }
+
+    transform: translateY(-50px);
+    transition: transform 200ms ease-in-out, opacity 200ms ease-in-out;
 }
 .modal__close {
     padding: 0;
@@ -62,4 +75,9 @@
             text-decoration: none;
         }
     }
+}
+
+.modal__video {
+    display: block;
+    margin: 0 auto;
 }
