@@ -12,16 +12,16 @@
     }
 }
 
-.add-post__from {
+.add-post__form {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     
 }
 
 .add-post__textarea {
     display: block;
     flex-grow: 1;
-    height: 2.6rem;
+    height: 3.4rem;
     overflow: hidden;
 
     border: none;
@@ -37,13 +37,14 @@
     }
 }
 
-.add-post__from-actions {
+.add-post__form-actions {
 
     width: 12rem;
     flex-shrink: 0;
 
     display: flex;
     justify-content: flex-end;
+
     gap: 1.5rem;
 
        

@@ -384,8 +384,13 @@ body a {
 body a:hover {
   text-decoration: underline;
 }
-body.no-scroll, body.show-sidebar {
+body.no-scroll {
   overflow: hidden;
+}
+@media (max-width: 991px) {
+  body.show-sidebar {
+    overflow: hidden;
+  }
 }
 
 .page {
@@ -399,17 +404,6 @@ body.no-scroll, body.show-sidebar {
   .show-sidebar .page {
     position: relative;
   }
-  .show-sidebar .page::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 100;
-  }
 }
 
 .page__title {
@@ -419,6 +413,19 @@ body.no-scroll, body.show-sidebar {
 }
 .page__title--center {
   text-align: center;
+}
+
+@media (max-width: 991px) {
+  .page__mask {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
 }
 
 .header {
@@ -946,15 +953,15 @@ body.no-scroll, body.show-sidebar {
   }
 }
 
-.add-post__from {
+.add-post__form {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .add-post__textarea {
   display: block;
   flex-grow: 1;
-  height: 2.6rem;
+  height: 3.4rem;
   overflow: hidden;
   border: none;
   background: transparent;
@@ -967,7 +974,7 @@ body.no-scroll, body.show-sidebar {
   color: #D2D2D2;
 }
 
-.add-post__from-actions {
+.add-post__form-actions {
   width: 12rem;
   flex-shrink: 0;
   display: flex;
@@ -975,7 +982,7 @@ body.no-scroll, body.show-sidebar {
   gap: 1.5rem;
 }
 @media (max-width: 575px) {
-  .add-post__from-actions {
+  .add-post__form-actions {
     width: 9rem;
   }
 }
@@ -1396,7 +1403,7 @@ body.no-scroll, body.show-sidebar {
   width: 100%;
 }
 .form__control--textarea {
-  height: 3rem;
+  height: 3.2rem;
   overflow: hidden;
   resize: none;
 }
@@ -1616,6 +1623,11 @@ body.no-scroll, body.show-sidebar {
 .modal__content--story {
   padding: 0;
   background: none;
+}
+@media (max-width: 991px) {
+  .modal__content {
+    padding: 5rem 3rem 3rem;
+  }
 }
 
 .modal__close {
